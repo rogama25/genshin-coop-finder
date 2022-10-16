@@ -1,0 +1,1 @@
+# genshin-coop-finder
