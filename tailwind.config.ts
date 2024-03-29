@@ -1,3 +1,4 @@
+import { scrollbarColor, scrollbarGutter, scrollbarWidth } from "tailwind-scrollbar-utilities";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -13,8 +14,18 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      boxShadow: {
+        "floating-card": "0 0 50px 5px rgba(0, 0, 0, 1)",
+      },
+      fontFamily: {
+        "gotu": ["Gotu, sans-serif"]
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    scrollbarGutter(),
+    scrollbarWidth(),
+    scrollbarColor()
+  ],
 };
 export default config;
